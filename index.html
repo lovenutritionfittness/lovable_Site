@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Love Nutrition & Wellness Clinic | Holistic Health Solutions</title>
+   <link rel="icon" type="image/png" href="love-fav.png">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      
+       body {
+           font-family: 'Poppins', sans-serif;
+           scroll-behavior: smooth;
+       }
+      
+       .hero-gradient {
+  background: 
+    linear-gradient(135deg, rgba(245, 247, 250, 0.8) 0%, rgba(195, 207, 226, 0.8) 100%), 
+    url("new-love-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+      
+       .service-card:hover {
+           transform: translateY(-10px);
+           box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+       }
+      
+       .service-card {
+           transition: all 0.3s ease;
+       }
+      
+       .nav-link {
+           position: relative;
+       }
+      
+       .nav-link:after {
+           content: '';
+           position: absolute;
+           width: 0;
+           height: 2px;
+           bottom: 0;
+           left: 0;
+           background-color: #4f46e5;
+           transition: width 0.3s ease;
+       }
+      
+       .nav-link:hover:after {
+           width: 100%;
+       }
+      
+       .appointment-btn {
+           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+           transition: all 0.3s ease;
+       }
+      
+       .appointment-btn:hover {
+           transform: translateY(-3px);
+           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+       }
+   </style>
+
+
+
+<!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #e0f0ff;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    .swiper-slide {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #007bff;
+    }
+
+    .swiper-pagination-bullet {
+      background: #007bff;
+    }
+  </style>
+   
+
+
+
+
+
+
+<style>
+  /* Base styles */
+  .whatsapp-mobile {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    background: linear-gradient(180deg,#25D366,#128C7E);
+    z-index: 9999;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+
+  .whatsapp-mobile:active { transform: scale(.98); }
+  .whatsapp-mobile:focus { outline: 3px solid rgba(0,0,0,0.12); }
+
+  .whatsapp-mobile .wh-icon {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+    display: block;
+  }
+
+  /* Hide by default on larger screens */
+  @media (min-width: 769px) {
+    .whatsapp-mobile { display: none !important; }
+  }
+</style>
+
+
+</head>
+<body class="bg-gray-50">
+   <!-- Header/Navigation -->
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+       <div class="container mx-auto px-6 py-4">
+           <div class="flex items-center justify-between">
+               <div class="flex items-center">
+                   <div class="w-12 h-12 rounded-full  flex items-center justify-center mr-3">
+                       <img src="love-logo.jpg" alt="logo">
+                   </div>
+                   <div>
+                       <h1 class="text-xl font-bold text-gray-800">Love Nutrition</h1>
+                       <p class="text-xs text-gray-500">Wellness Clinic</p>
+                   </div>
+               </div>
+              
+               <div class="hidden md:flex items-center space-x-8">
+                   <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600">Home</a>
+                   <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600">About</a>
+                   <a href="#services" class="nav-link text-gray-700 hover:text-indigo-600">Services</a>
+                   <a href="#experience" class="nav-link text-gray-700 hover:text-indigo-600">Experience</a>
+                   <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600">Contact</a>
+                   <a href="#appointment" class="px-4 py-2 bg-indigo-600 text-white rounded-full appointment-btn">Book Appointment</a>
+               </div>
+              
+               <button class="md:hidden focus:outline-none">
+                   <i class="fas fa-bars text-gray-600 text-2xl"></i>
+               </button>
+           </div>
+       </div>
+   </header>
+
+
+   <!-- Hero Section -->
+   <section id="home" class="hero-gradient py-20">
+       <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+           <div class="md:w-1/2 mb-10 md:mb-0">
+               <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+                   Holistic Health & Wellness Solutions
+               </h1>
+               <p class="text-lg text-gray-600 mb-8">
+                   Scientifically-proven diet therapies for weight management and disease prevention.
+                   Your journey to better health starts here.
+               </p>
+               <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                   <a href="#appointment" class="px-6 py-3 bg-indigo-600 text-white rounded-full text-center appointment-btn">
+                       Get Started Today
+                   </a>
+                   <a href="#services" class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-full text-center hover:bg-indigo-50 transition">
+                       Explore Services
+                   </a>
+               </div>
+           </div>
+           <div class="md:w-1/2 flex justify-center">
+               <div class="relative">
+                   <img src="https://images.unsplash.com/photo-1498837167922-d50448494019?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Healthy Food"
+                        class="rounded-lg shadow-xl w-full max-w-md">
+                   <div class="absolute -bottom-10 -right-6 bg-white p-4 rounded-lg shadow-lg">
+                       <div class="flex items-center">
+                           <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                               <i class="fas fa-check text-green-600"></i>
+                           </div>
+                           <div>
+                               <p class="font-semibold">500+</p>
+                               <p class="text-sm text-gray-500">Happy Clients</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- About Section -->
+   <section id="about" class="py-20 bg-white">
+       <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">About Our Clinic</h2>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+           </div>
+          
+           <div class="flex flex-col md:flex-row items-center">
+               <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                   <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="About Us"
+                        class="rounded-lg shadow-lg w-full">
+               </div>
+               <div class="md:w-1/2">
+                   <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Holistic Approach</h3>
+                   <p class="text-gray-600 mb-6">
+                       At Love Nutrition & Wellness Clinic, we believe in a comprehensive approach to health that
+                       addresses not just symptoms but the root causes of health issues. Our scientifically-proven
+                       diet therapies are tailored to each individual's unique needs.
+                   </p>
+                   <p class="text-gray-600 mb-6">
+                       We specialize in weight management and associated health problems, offering personalized
+                       solutions that combine nutrition science with lifestyle modifications for sustainable results.
+                   </p>
+                   <div class="flex items-center mb-4">
+                       <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                       <span class="text-gray-700">Personalized diet plans</span>
+                   </div>
+                   <div class="flex items-center mb-4">
+                       <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                       <span class="text-gray-700">Evidence-based nutrition therapy</span>
+                   </div>
+                   <div class="flex items-center mb-4">
+                       <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                       <span class="text-gray-700">Holistic wellness strategies</span>
+                   </div>
+                   <div class="flex items-center">
+                       <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                       <span class="text-gray-700">Continuous support and monitoring</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Services Section -->
+   <section id="services" class="py-20 bg-gray-50">
+       <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+               <p class="text-gray-600 max-w-2xl mx-auto">
+                   Comprehensive nutrition and wellness services tailored to your specific health needs
+               </p>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+           </div>
+          
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <!-- Service Card 1 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-utensils text-indigo-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Diabetic Diet Health</h3>
+                   <p class="text-gray-600 mb-4">
+                       Personalized meal plans to manage blood sugar levels and prevent complications.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+              
+               <!-- Service Card 2 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-heartbeat text-green-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Diet And Heart Health</h3>
+                   <p class="text-gray-600 mb-4">
+                       Nutrition strategies to improve cardiovascular health and reduce risk factors.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+              
+               <!-- Service Card 3 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-venus text-purple-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Pcod/Pcos Diet Health</h3>
+                   <p class="text-gray-600 mb-4">
+                       Specialized nutrition plans to manage PCOD symptoms and restore hormonal balance.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+              
+               <!-- Service Card 4 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-baby text-pink-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Pre/Post Pregnancy</h3>
+                   <p class="text-gray-600 mb-4">
+                       Optimal nutrition for mother and baby during pregnancy and postpartum.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+              
+               <!-- Service Card 5 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-weight text-blue-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Weight Loss Diet</h3>
+                   <p class="text-gray-600 mb-4">
+                       Sustainable weight management programs tailored to your body and lifestyle.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+              
+               <!-- Service Card 6 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-child text-yellow-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Healthy Diet for Kids</h3>
+                   <p class="text-gray-600 mb-4">
+                       Nutrition plans to support growth, development and establish healthy eating habits.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+
+                 <!-- Service Card 7 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                      <i class="fas fa-apple-alt text-blue-600 text-xl"></i> 
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Weight Gain</h3>
+                   <p class="text-gray-600 mb-4">
+                       For healthy weight gain, focus on calorie-dense, nutritious foods like nuts, dairy, lean proteins, and whole grains.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+
+                 <!-- Service Card 8 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                      <i class="fas fa-dumbbell text-green-600 text-xl"></i> 
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Muscle Mass Increase</h3>
+                   <p class="text-gray-600 mb-4">
+                       Building muscle is not only about lifting weights; it also requires the right nutrition to fuel growth, repair, and strength.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+
+
+                 <!-- Service Card 9 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                      <i class="fas fa-spa text-pink-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Skin Care Nutrition</h3>
+                   <p class="text-gray-600 mb-4">
+                       Nutrition plans to support growth, development and establish healthy eating habits.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+
+                  <!-- Service Card 10 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                      <i class="fas fa-seedling text-purple-600 text-xl"></i> 
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Hair Growth Nutrition</h3>
+                   <p class="text-gray-600 mb-4">
+                       Nutrition plans to support growth, development and establish healthy eating habits.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+
+                  <!-- Service Card 11 -->
+               <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                   <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                       <i class="fas fa-sync-alt text-blue-600 text-xl"></i>
+                   </div>
+                   <h3 class="text-xl font-semibold text-gray-800 mb-3">Overall Body Transformation</h3>
+                   <p class="text-gray-600 mb-4">
+                       Nutrition plans to support growth, development and establish healthy eating habits.
+                   </p>
+                   <a href="#appointment" class="text-indigo-600 font-medium inline-flex items-center">
+                       Learn more <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+           </div>
+          
+           <div class="text-center mt-12">
+               <a href="#appointment" class="px-6 py-3 bg-indigo-600 text-white rounded-full inline-flex items-center appointment-btn">
+                   View All Services <i class="fas fa-chevron-right ml-2"></i>
+               </a>
+           </div>
+       </div>
+   </section>
+
+<section>
+ <div class="text-center mb-8">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">Real-Life Fitness Makeovers</h2>
+               <p class="text-gray-600 max-w-2xl mx-auto">
+                   Comprehensive nutrition and wellness services tailored to your specific health needs
+               </p>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+           </div>
+
+
+           <!-- Slider main container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="image-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="image-2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="image-3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="image-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="image-2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="image-3.jpg" alt=""></div>
+    </div>
+
+    <!-- Pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- Navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+  </div>
+
+
+
+
+</section>
+
+
+
+   <!-- Experience Section -->
+   <section id="experience" class="py-20 bg-white">
+       <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+           </div>
+          
+           <div class="flex flex-col md:flex-row">
+               <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                   <h3 class="text-2xl font-semibold text-gray-800 mb-6">Current Associations</h3>
+                  
+                   <div class="space-y-6">
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600">
+                                   <i class="fas fa-laptop-medical"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Founder & Senior Dietitian</h4>
+                               <p class="text-gray-600">Love Nutrition (Diet & Wellness Clinic), Bodinayakanur, Theni</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                                   <i class="fas fa-globe"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Online Consultant - Senior Dietitian</h4>
+                               <p class="text-gray-600">India (Empowering better health)</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-100 text-purple-600">
+                                   <i class="fas fa-user-md"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Online Consultant - Senior Nutritionist/Dietician</h4>
+                               <p class="text-gray-600">Coimbatore, Chennai, Theni</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+              
+               <div class="md:w-1/2">
+                   <h3 class="text-2xl font-semibold text-gray-800 mb-6">Previous Experience</h3>
+                  
+                   <div class="space-y-6">
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                   <i class="fas fa-spa"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Slimming Manager</h4>
+                               <p class="text-gray-600">Vecura Wellness Clinic, Chennai, India</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-100 text-yellow-600">
+                                   <i class="fas fa-dumbbell"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Dietitian</h4>
+                               <p class="text-gray-600">The Sailorman Health Club, Coimbatore, India</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-red-100 text-red-600">
+                                   <i class="fas fa-hospital"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Clinical Dietitian (Internship)</h4>
+                               <p class="text-gray-600">Nalam Hospital, Theni & Vadamalayan Hospital, Madurai, Tamilnadu</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Testimonials Section -->
+   <section class="py-20 bg-indigo-50">
+       <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">Client Success Stories</h2>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+           </div>
+          
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <!-- Testimonial 1 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                   <div class="flex items-center mb-4">
+                       <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                           <i class="fas fa-user text-indigo-600"></i>
+                       </div>
+                       <div>
+                           <h4 class="font-semibold text-gray-800">Priya K.</h4>
+                           <p class="text-sm text-gray-500">PCOD Management</p>
+                       </div>
+                   </div>
+                   <p class="text-gray-600 italic">
+                       "After struggling with PCOD for years, the personalized diet plan helped me lose 12kg and regulate my cycles naturally. My energy levels have never been better!"
+                   </p>
+                   <div class="flex mt-4">
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                   </div>
+               </div>
+              
+               <!-- Testimonial 2 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                   <div class="flex items-center mb-4">
+                       <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                           <i class="fas fa-user text-green-600"></i>
+                       </div>
+                       <div>
+                           <h4 class="font-semibold text-gray-800">Rahul M.</h4>
+                           <p class="text-sm text-gray-500">Diabetes Management</p>
+                       </div>
+                   </div>
+                   <p class="text-gray-600 italic">
+                       "My HbA1c dropped from 8.5 to 6.2 in just 4 months with the diabetic diet plan. The continuous support and monitoring made all the difference."
+                   </p>
+                   <div class="flex mt-4">
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                   </div>
+               </div>
+              
+               <!-- Testimonial 3 -->
+               <div class="bg-white p-6 rounded-lg shadow-md">
+                   <div class="flex items-center mb-4">
+                       <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                           <i class="fas fa-user text-purple-600"></i>
+                       </div>
+                       <div>
+                           <h4 class="font-semibold text-gray-800">Ananya S.</h4>
+                           <p class="text-sm text-gray-500">Pregnancy Nutrition</p>
+                       </div>
+                   </div>
+                   <p class="text-gray-600 italic">
+                       "The pregnancy diet plan helped me maintain optimal weight gain and nutrition throughout my pregnancy. My baby was born healthy and I recovered quickly postpartum."
+                   </p>
+                   <div class="flex mt-4">
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star text-yellow-400"></i>
+                       <i class="fas fa-star-half-alt text-yellow-400"></i>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Appointment Section -->
+   <section id="appointment" class="py-20 bg-indigo-600 text-white">
+       <div class="container mx-auto px-6">
+           <div class="max-w-4xl mx-auto text-center">
+               <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Health?</h2>
+               <p class="text-xl mb-8 opacity-90">
+                   Book your consultation today and take the first step towards a healthier, happier you
+               </p>
+               <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                   <a href="tel:+916385785508" class="px-6 py-3 bg-white text-indigo-600 rounded-full font-medium hover:bg-gray-100 transition">
+                       <i class="fas fa-phone-alt mr-2"></i> Call Now
+                   </a>
+                   <a href="https://wa.me/+916385785508" class="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition">
+                       <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                   </a>
+                   <a href="mailto:lovenutritionfittness@gmail.com" class="px-6 py-3 bg-indigo-700 text-white rounded-full font-medium hover:bg-indigo-800 transition">
+                       <i class="fas fa-envelope mr-2"></i> Email Us
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Contact Section -->
+   <section id="contact" class="py-20 bg-white">
+       <div class="container mx-auto px-6">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+               <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+           </div>
+          
+           <div class="flex flex-col md:flex-row">
+               <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                   <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get In Touch</h3>
+                  
+                   <div class="space-y-6">
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-600">
+                                   <i class="fas fa-map-marker-alt"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Clinic Address</h4>
+                               <p class="text-gray-600">Tamilnadu, India</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-green-100 text-green-600">
+                                   <i class="fas fa-phone-alt"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Phone Number</h4>
+                               <p class="text-gray-600">+91 6385785508</p>
+                           </div>
+                       </div>
+                      
+                       <div class="flex">
+                           <div class="flex-shrink-0">
+                               <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+                                   <i class="fas fa-envelope"></i>
+                               </div>
+                           </div>
+                           <div class="ml-4">
+                               <h4 class="text-lg font-medium text-gray-800">Email Address</h4>
+                               <p class="text-gray-600">lovenutritionfittness@gmail.com</p>
+                           </div>
+                       </div>
+                   </div>
+                  
+                   <div class="mt-8">
+                       <h4 class="text-lg font-medium text-gray-800 mb-4">Clinic Hours</h4>
+                       <div class="space-y-2">
+                           <div class="flex justify-between max-w-xs">
+                               <span class="text-gray-600">Monday - Friday</span>
+                               <span class="text-gray-800 font-medium">9:00 AM - 6:00 PM</span>
+                           </div>
+                           <div class="flex justify-between max-w-xs">
+                               <span class="text-gray-600">Saturday</span>
+                               <span class="text-gray-800 font-medium">9:00 AM - 2:00 PM</span>
+                           </div>
+                           <div class="flex justify-between max-w-xs">
+                               <span class="text-gray-600">Sunday</span>
+                               <span class="text-gray-800 font-medium">Closed</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+              
+               <div class="md:w-1/2">
+                   <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
+                <form action="mail.php" method="POST" class="space-y-4">
+    <div>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+    <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+    <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+    <div>
+        <label for="service">Service Interested In</label>
+        <select name="service" id="service" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="">Select a service</option>
+            <option>Diabetic Diet Health</option>
+            <option>Diet And Heart Health</option>
+            <option>PCOD Diet Health</option>
+            <option>Pregnancy Diet Health</option>
+            <option>Weight Loss Diet</option>
+            <option>Healthy Diet for Kids</option>
+            <option>Other</option>
+        </select>
+    </div>
+    <div>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+    </div>
+    <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">
+        Send Message
+    </button>
+</form>
+
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <div>
+    <!-- WhatsApp mobile-only (CSS-only) -->
+<a
+  href="https://wa.me/+916385785508?text=Hi%20there!%20I%27d%20like%20to%20know%20more."
+  class="whatsapp-mobile"
+  aria-label="Chat on WhatsApp"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <!-- Inline SVG icon (no external fonts) -->
+  <svg viewBox="0 0 24 24" class="wh-icon" aria-hidden="true">
+    <path d="M20.52 3.48A11.73 11.73 0 0 0 12 .25C6.1.25 1.25 5.08 1.25 10.97c0 1.94.5 3.82 1.45 5.5L.25 23.75l7.5-2.02a11.7 11.7 0 0 0 4.25.78c5.9 0 10.75-4.83 10.75-10.72 0-2.86-1.1-5.53-3.28-7.31zM12 21.5c-1.34 0-2.65-.35-3.78-1.02l-.27-.16-4.46 1.2 1.2-4.35-.18-.29A8.5 8.5 0 1 1 20.5 12 8.5 8.5 0 0 1 12 21.5z"/>
+    <path d="M17.2 14.1c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.8.96-.98 1.16-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.12.3-.33.45-.5.15-.17.2-.28.3-.48.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.28.3-1.07 1.04-1.07 2.54 0 1.5 1.1 2.96 1.25 3.17.15.2 2.16 3.3 5.24 4.63 3.08 1.34 3.08.9 3.64.84.56-.06 1.8-.73 2.06-1.44.27-.72.27-1.34.19-1.47-.07-.12-.27-.2-.57-.35z"/>
+  </svg>
+</a>
+   </div>
+
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 text-white py-12">
+       <div class="container mx-auto px-6">
+           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+               <div>
+                   <div class="flex items-center mb-4">
+                       <div class="w-10 h-10 rounded-full  flex items-center justify-center mr-3">
+                           <img src="love-logo.jpg" alt="logo">
+                       </div>
+                       <div>
+                           <h3 class="text-lg font-bold">Love Nutrition</h3>
+                           <p class="text-xs text-gray-400">Wellness Clinic</p>
+                       </div>
+                   </div>
+                   <p class="text-gray-400 text-sm mb-4">
+                       Holistic health solutions through scientifically-proven diet therapies and lifestyle modifications.
+                   </p>
+                   <div class="flex space-x-4">
+                       <a href="#" class="text-gray-400 hover:text-white">
+                           <i class="fab fa-facebook-f"></i>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-white">
+                           <i class="fab fa-instagram"></i>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-white">
+                           <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="#" class="text-gray-400 hover:text-white">
+                           <i class="fab fa-linkedin-in"></i>
+                       </a>
+                   </div>
+               </div>
+              
+               <div>
+                   <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                   <ul class="space-y-2">
+                       <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                       <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                       <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                       <li><a href="#experience" class="text-gray-400 hover:text-white transition">Experience</a></li>
+                       <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                   </ul>
+               </div>
+              
+               <div>
+                   <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                   <ul class="space-y-2">
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Diabetic Diet</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Heart Health</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">PCOD Management</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Weight Loss</a></li>
+                       <li><a href="#" class="text-gray-400 hover:text-white transition">Pregnancy Nutrition</a></li>
+                   </ul>
+               </div>
+              
+               <div>
+                   <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                   <p class="text-gray-400 text-sm mb-4">
+                       Subscribe to our newsletter for health tips and updates.
+                   </p>
+                   <form class="flex">
+                       <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                       <button type="submit" class="px-4 py-2 bg-indigo-600 rounded-r-md hover:bg-indigo-700 transition">
+                           <i class="fas fa-paper-plane"></i>
+                       </button>
+                   </form>
+               </div>
+           </div>
+          
+           <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+               <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                   &copy; 2025 Love Nutrition & Wellness Clinic. All rights reserved.
+               </p>
+               <div class="flex space-x-6">
+                   <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                   <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+
+   <!-- Back to Top Button -->
+   <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 transition opacity-0 invisible">
+       <i class="fas fa-arrow-up"></i>
+   </button> -->
+
+
+   <script>
+       // Back to Top Button
+       const backToTopButton = document.getElementById('backToTop');
+      
+       window.addEventListener('scroll', () => {
+           if (window.pageYOffset > 300) {
+               backToTopButton.classList.remove('opacity-0', 'invisible');
+               backToTopButton.classList.add('opacity-100', 'visible');
+           } else {
+               backToTopButton.classList.remove('opacity-100', 'visible');
+               backToTopButton.classList.add('opacity-0', 'invisible');
+           }
+       });
+      
+       backToTopButton.addEventListener('click', () => {
+           window.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+           });
+       });
+      
+       // Smooth scrolling for navigation links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function(e) {
+               e.preventDefault();
+              
+               const targetId = this.getAttribute('href');
+               if (targetId === '#') return;
+              
+               const targetElement = document.querySelector(targetId);
+               if (targetElement) {
+                   window.scrollTo({
+                       top: targetElement.offsetTop - 80,
+                       behavior: 'smooth'
+                   });
+               }
+           });
+       });
+      
+       // Mobile menu toggle (would need to be implemented fully)
+       const mobileMenuButton = document.querySelector('.md\\:hidden');
+       mobileMenuButton.addEventListener('click', () => {
+           // This would toggle a mobile menu - implementation would depend on your design
+           alert('Mobile menu would open here in a full implementation');
+       });
+   </script>
+
+
+
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2, // mobile
+        },
+        600: {
+          slidesPerView: 2, // small tablets
+        },
+        900: {
+          slidesPerView: 3, // desktop
+        },
+      },
+    });
+  </script>
+
+ 
+</body>
+</html>
+
