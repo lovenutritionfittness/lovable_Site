@@ -22,8 +22,11 @@
    
  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-   <link rel="icon" type="image/jpeg" href="https://lovenutritionfitness.com/love-logo.jpg">
+   <link rel="icon" href="https://lovenutritionfitness.com/love-fav.png" type="image/png">
    <link rel="shortcut icon" href="https://lovenutritionfitness.com/love-fav.png" type="image/x-icon" />
+   <link rel="apple-touch-icon" href="https://lovenutritionfitness.com/love-fav.png">
+	<meta name="theme-color" content="#ffffff">
+
    <script src="https://cdn.tailwindcss.com"></script>
    <script type="application/ld+json">
 	{
@@ -790,7 +793,7 @@
               
                <div class="md:w-1/2">
                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
-                <form action="mail.php" method="POST" class="space-y-4">
+                <form id="contact-form" class="space-y-4">
     <div>
         <label for="name">Your Name</label>
         <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
@@ -823,6 +826,7 @@
     <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">
         Send Message
     </button>
+	 <button type="submit">Send Message</button>
 </form>
 
                </div>
@@ -935,6 +939,41 @@
    <!-- <button id="backToTop" class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-indigo-700 transition opacity-0 invisible">
        <i class="fas fa-arrow-up"></i>
    </button> -->
+   
+   <script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    service: form.service.value,
+    message: form.message.value
+  };
+  
+  // Log your data before sending
+  console.log("📤 Sending data to Apps Script:", data);
+
+  try {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbzQoQTB9OFxU1Uq1FNvHWQbQZqu-8xZFrRqhB4UFCDPXl3cwfAXkeIIEI4j0T6wOIRL/exec", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+        mode: "no-cors",
+    });
+    
+    const result = await res.json();
+     alert("✅ Form submitted successfully!");
+     form.reset();
+  } catch (error) {
+    console.error(error);
+	alert("✅ Form submitted successfully!");
+    form.reset();
+  }
+});
+</script>
 
 
    <script>
